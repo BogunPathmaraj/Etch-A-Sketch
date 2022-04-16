@@ -1,0 +1,25 @@
+ body 
+ {
+    background-color:limegreen;
+    text-align: center;
+    border: 1px;
+ }
+ #container
+ {
+     border: solid;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     align-content: space-around;
+     background-color: lightgrey;
+ }
+  
+ 
+ .gridbox 
+ {
+     height: 100px;
+     width: 100px; 
+    border-color: red;
+    border-style: solid;
+    background-color: antiquewhite;
+ }
