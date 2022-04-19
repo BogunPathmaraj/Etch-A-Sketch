@@ -2,20 +2,31 @@
  {
     background-color: white;
     text-align: center;
-    border: 1px;
+    padding-bottom: 20px;
+    border-style: solid;
  }
+.title
+{
+   border-style: dotted;
+}
+
+.reset-button
+{
+    
+}
+
  #container
  {
+    margin: 10px;
      height: 960px;
      width: 960px;
      border: solid;
      display: inline-flex;
      flex-wrap: wrap; 
      background-color: lightgrey;
-     /* justify-self: flex-end;
-     align-self: flex-end; */
+      
      border-color: red;
-   /*   align-content:flex-start ; */
+    
  }
  
  .gridbox 
@@ -23,6 +34,7 @@
      border-style: solid;
     border-width: 1px;
     background-color: antiquewhite;
+    border-color: grey;
  }
 
  
