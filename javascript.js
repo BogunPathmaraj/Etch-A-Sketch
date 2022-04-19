@@ -10,6 +10,7 @@ let boxes = document.getElementsByClassName('gridbox')
 let button = document.getElementById('reset-btn') 
    button.addEventListener('click',() => resetGrid(boxes))
 
+    
 
 //The Dynamic Grid creation 
  function createGrid(gridSize)
@@ -30,7 +31,11 @@ let button = document.getElementById('reset-btn')
             let dimension = ((960 - gridSize*2)/(gridSize) + 'px').toString(); 
                   boxes[i].style.height = `${dimension}` 
                   boxes[i].style.width = `${dimension}`
-                  boxes[i].addEventListener('mouseover', () => {boxes[i].style.backgroundColor = 'red'})
+                  boxes[i].addEventListener('mouseover', () => 
+                  {
+                    let randomColor = "#" + ((1<<24)*Math.random() | 0).toString(16)
+                    boxes[i].style.backgroundColor = `${randomColor}`
+                  } )
             }
             
             
@@ -43,10 +48,7 @@ let button = document.getElementById('reset-btn')
 
  
    
-//The Random Color Generator
-function randomColor(){
-
-}
+ 
 
 //Reset Grid color
 function resetGrid(boxes )

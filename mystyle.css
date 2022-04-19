@@ -23,7 +23,7 @@
      border: solid;
      display: inline-flex;
      flex-wrap: wrap; 
-     background-color: lightgrey;
+     background-color: rgba(211, 211, 211, 0.808);
       
      border-color: red;
     
